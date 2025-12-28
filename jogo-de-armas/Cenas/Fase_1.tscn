@@ -1,8 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://71tj4cnpq0ht"]
+[gd_scene load_steps=2 format=3 uid="uid://71tj4cnpq0ht"]
 
 [ext_resource type="Texture2D" uid="uid://dq4kvk1lugah6" path="res://PNGs/fundo.jpeg" id="1_tyouw"]
-[ext_resource type="Texture2D" uid="uid://cyhr27s8femb3" path="res://PNGs/OIP.jpeg" id="2_3ecmb"]
-[ext_resource type="Script" uid="uid://3i272eq2qure" path="res://Cenas/character_body_2d.gd" id="2_np8ys"]
 
 [node name="Fase1" type="Node2D"]
 
@@ -10,15 +8,3 @@
 position = Vector2(577, 323)
 scale = Vector2(6.3999996, 3.6111114)
 texture = ExtResource("1_tyouw")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(399, 366)
-script = ExtResource("2_np8ys")
-
-[node name="Oip" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(-5, -4)
-texture = ExtResource("2_3ecmb")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
-position = Vector2(0, 4)
-polygon = PackedVector2Array(-104, 76, -4, -88, 95, 78)

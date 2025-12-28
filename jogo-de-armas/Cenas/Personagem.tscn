@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://r0jfd7n8hyij"]
+
+[ext_resource type="Script" uid="uid://bu1jm4s6ofyby" path="res://Scripts/Personagem.gd" id="1_yjd05"]
+[ext_resource type="Shader" uid="uid://woj6cx1jambu" path="res://Scripts/Shaders/Personagem.gdshader" id="2_pjadq"]
+[ext_resource type="Texture2D" uid="uid://cyhr27s8femb3" path="res://PNGs/OIP.jpeg" id="3_wxlit"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nc1tq"]
+shader = ExtResource("2_pjadq")
+
+[node name="Personagem" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_yjd05")
+
+[node name="Triângulo" type="Sprite2D" parent="CharacterBody2D"]
+material = SubResource("ShaderMaterial_nc1tq")
+position = Vector2(390, 336)
+texture = ExtResource("3_wxlit")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(1, 4)
+polygon = PackedVector2Array(290, 419, 392, 248, 491, 422)

@@ -1,0 +1,9 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766921243
+::res://Cenas/::1766499699
+character_body_2d.gd::GDScript::1983500573180408134::1766499699::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Fase_1.tscn::PackedScene::2300888039908423925::1766499699::0::1::::<><><>0<>0<><>::uid://dq4kvk1lugah6::::res://PNGs/fundo.jpeg<>uid://cyhr27s8femb3::::res://PNGs/OIP.jpeg<>uid://3i272eq2qure::::res://Cenas/character_body_2d.gd
+::res://PNGs/::1766499699
+fundo.jpeg::CompressedTexture2D::8342795741680391005::1766499699::1766921245::1::::<><><>0<>0<>0ddd34307d9f6fa17bc89f5975ba438a<>res://.godot/imported/fundo.jpeg-dee57c1eb8027b55abf3c39d4c359a3a.ctex::
+icon.svg::CompressedTexture2D::7896236473010538928::1766499699::1766921245::1::::<><><>0<>0<>38f614765290f6ea04ff9a35d9be3a2c<>res://.godot/imported/icon.svg-0220677184983ca5e1fc1cd2eb197a21.ctex::
+OIP.jpeg::CompressedTexture2D::6472906374349765758::1766499699::1766921245::1::::<><><>0<>0<>449a9066f16259b948619af629c0c6d9<>res://.godot/imported/OIP.jpeg-4c8b530955c569d5fea81301f69e6dcf.ctex::
