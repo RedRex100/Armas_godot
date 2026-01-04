@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4ngkc1dm2kfd"]
+
+[ext_resource type="Script" uid="uid://bwlqp2lxab75r" path="res://Scripts/arma_2.gd" id="1_iqwbv"]
+[ext_resource type="Shader" uid="uid://woj6cx1jambu" path="res://Scripts/Shaders/Personagem.gdshader" id="2_lvcgg"]
+[ext_resource type="Texture2D" uid="uid://buhixyaqu6wx2" path="res://PNGs/arma.png" id="3_76vg5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e1m4a"]
+shader = ExtResource("2_lvcgg")
+
+[node name="Arma" type="Node2D"]
+
+[node name="Arma2" type="Node2D" parent="."]
+script = ExtResource("1_iqwbv")
+
+[node name="PNG_da_arma" type="Sprite2D" parent="Arma2"]
+material = SubResource("ShaderMaterial_e1m4a")
+position = Vector2(426, 304)
+scale = Vector2(0.410939, 0.471537)
+texture = ExtResource("3_76vg5")
+
+[node name="Marcador" type="Marker2D" parent="Arma2"]
+unique_name_in_owner = true
+position = Vector2(442, 260)

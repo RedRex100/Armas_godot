@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwlivritefynd"]
+
+[ext_resource type="Script" uid="uid://cjag1kv7mwn6t" path="res://Scripts/bala.gd" id="1_mghm4"]
+[ext_resource type="Shader" uid="uid://c8kk2jjk25grl" path="res://Scripts/Shaders/Bala.gdshader" id="1_r1v8s"]
+[ext_resource type="Texture2D" uid="uid://dotecsrngp4nx" path="res://PNGs/bala.png" id="2_mghm4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_onmsj"]
+shader = ExtResource("1_r1v8s")
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_mghm4")
+
+[node name="Bala" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_onmsj")
+position = Vector2(29, 13)
+scale = Vector2(0.21563004, 0.2566585)
+texture = ExtResource("2_mghm4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(9, 14, 10, -13, 18, -15, 24, -15, 30, -13, 36, -10, 39, -6, 41, 0, 40, 6, 37, 10, 32, 13, 26, 15, 19, 16, 12, 15)

@@ -1,0 +1,13 @@
+res://Cenas/Fase_1.tscn
+res://Scripts/Shaders/Caixa.gdshader
+res://Scripts/Shaders/Personagem.gdshader
+res://Scripts/Personagem.gd
+res://Cenas/bullet.tscn
+res://Scripts/arma.gd
+res://Cenas/Arma.tscn
+res://Scripts/bullet.gd
+res://Cenas/Bala.tscn
+res://Scripts/arma_2.gd
+res://Scripts/Shaders/Bala.gdshader
+res://Cenas/Personagem.tscn
+res://Scripts/bala.gd

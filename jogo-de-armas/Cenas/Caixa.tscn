@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dd6lienirnlmi"]
+
+[ext_resource type="Shader" uid="uid://dm8wjibb8isf5" path="res://Scripts/Shaders/Caixa.gdshader" id="1_22sqt"]
+[ext_resource type="Texture2D" uid="uid://d3tcmyhmphihq" path="res://PNGs/quadrado.png" id="2_hegcm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_754cm"]
+shader = ExtResource("1_22sqt")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aytbb"]
+size = Vector2(143, 136)
+
+[node name="Caixa" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Quadrado" type="Sprite2D" parent="StaticBody2D"]
+material = SubResource("ShaderMaterial_754cm")
+position = Vector2(374.49997, 189.99998)
+scale = Vector2(0.374637, 0.35673627)
+texture = ExtResource("2_hegcm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(369.5, 195)
+shape = SubResource("RectangleShape2D_aytbb")

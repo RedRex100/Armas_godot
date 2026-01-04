@@ -1,10 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://71tj4cnpq0ht"]
+[gd_scene load_steps=5 format=3 uid="uid://71tj4cnpq0ht"]
 
 [ext_resource type="Texture2D" uid="uid://dq4kvk1lugah6" path="res://PNGs/fundo.jpeg" id="1_tyouw"]
+[ext_resource type="PackedScene" uid="uid://r0jfd7n8hyij" path="res://Cenas/Personagem.tscn" id="2_tyouw"]
+[ext_resource type="PackedScene" uid="uid://dd6lienirnlmi" path="res://Cenas/Caixa.tscn" id="3_3ecmb"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_3ecmb"]
+a = Vector2(2893, 12)
+b = Vector2(-110, 10)
 
 [node name="Fase1" type="Node2D"]
 
 [node name="Fundo" type="Sprite2D" parent="."]
-position = Vector2(577, 323)
-scale = Vector2(6.3999996, 3.6111114)
+position = Vector2(1574, 1517)
+scale = Vector2(26.072218, 19.944443)
 texture = ExtResource("1_tyouw")
+
+[node name="Personagem" parent="." instance=ExtResource("2_tyouw")]
+position = Vector2(3, 3)
+
+[node name="Caixa2" parent="." instance=ExtResource("3_3ecmb")]
+position = Vector2(399, 229)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(149, 553)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-39, -69)
+shape = SubResource("SegmentShape2D_3ecmb")
+
+[node name="Caixa" parent="." instance=ExtResource("3_3ecmb")]
+position = Vector2(750, 74)
